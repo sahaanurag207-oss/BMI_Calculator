@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <form id="bmiForm">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <button type="submit">Calculate BMI</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        
+        <div class="container">
+            <h2>BMI Classification</h2>
+            <p>BMI is a simple calculation using height and weight. It helps categorize individuals into weight categories to assess potential health risks.</p>
+            <div class="container" style="text-align: center;">
+    <h2>BMI Formula</h2>
+    <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mi>BMI</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mi>Weight</mi>
+                    <mo> (</mo>
+                    <mi>kg</mi>
+                    <mo>)</mo>
+                </mrow>
+                <mrow>
+                    <msup>
+                        <mi>Height</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo> (</mo>
+                    <msup>
+                        <mi>m</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>)</mo>
+                </mrow>
+            </mfrac>
+        </mrow>
+    </math>
+</div>        
+</div>
+        
+        <div class="container">
+            <table class="bmi-table">
+                <thead>
+                    <tr><th>Class</th><th>Range</th><th>Risk</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Under</td><td>< 18.5</td><td>Malnutrition</td></tr>
+                    <tr><td>Normal</td><td>18.5-24.9</td><td>Low</td></tr>
+                    <tr><td>Over</td><td>25-29.9</td><td>Enhanced</td></tr>
+                    <tr><td>Obese</td><td>30+</td><td>High</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <h2>Your Progress</h2>
+            <canvas id="bmiChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
