@@ -1,16 +1,6 @@
-# BMI_Calculator
-It calculates the Body Mass Index as per Weight and Height
-This `README.md` is structured to highlight your technical skills and project features, making it ideal for a GitHub repository.
-
----
-
 # BMI-Calculator
 
-A professional, responsive BMI (Body Mass Index) Calculator built with modern web technologies. This project features a clean, grid-based dashboard for real-time health assessment, data visualization, and clear health classification metrics.
-
-## 🚀 Live Demo
-
-*(Insert your GitHub Pages link here once deployed)*
+A responsive BMI (Body Mass Index) Calculator built with modern web technologies. This project features a clean, grid-based dashboard for real-time health assessment, data visualization, and clear health classification metrics.
 
 ## 🛠 Features
 
@@ -36,5 +26,3 @@ A professional, responsive BMI (Body Mass Index) Calculator built with modern we
 └── README.md        # Project documentation
 
 ```
-
-**Pro-tip:** When you push this to GitHub, don't forget to replace `your-username` in the clone URL with your actual GitHub username! Would you like me to help you write a quick guide on how to deploy this to GitHub Pages so others can see it live?
